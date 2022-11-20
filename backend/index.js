@@ -35,8 +35,8 @@ resp.send('no user find');;
     const path = require('path');
 
     app.get('/' , (req , resp)=>{
-        app.use(express.static(path.resolve(__dirname , 'frontend' , 'build' ) ));  
-         resp.sendFile(path.resolve(__dirname , 'frontend' , 'build' , 'index.html'));
+      app.use(express.static(path.resolve(__dirname , 'frontend'  , 'inputbar', 'build' ) ));  
+         resp.sendFile(path.resolve(__dirname , 'frontend' ,'inputbar', 'build' , 'index.html'));
 
     })
  }
